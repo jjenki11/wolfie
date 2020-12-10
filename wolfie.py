@@ -28,4 +28,13 @@ async def nine_nine(ctx):
     response = random.choice(brooklyn_99_quotes)
     await ctx.send(response)
 
+@bot.command(name='matrix')
+async def matrix(ctx):
+    matrix_quotes = [
+        'Hello, Neo'
+    ]
+
+    response = random.choice(matrix_quotes)
+    await ctx.send(response)
+
 bot.run(TOKEN)
